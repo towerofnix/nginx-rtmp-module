@@ -409,9 +409,8 @@ ngx_rtmp_access_rule(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
         if (!all) {
             break;
         }
-
-        /* "all" passes through */
 #endif
+        /* FALLTHROUGH */
 
     default: /* AF_INET */
 
